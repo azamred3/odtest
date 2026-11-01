@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1A1621">
+<title>عودة للعقار — تسجيل الدخول</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="log.css">
+</head>
+<body>
+
+<!-- ============================================================
+     شاشة التحميل
+     ============================================================ -->
+<div class="loader" id="loader">
+    <div class="loader-logo-wrap">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-logo">
+            <i class="fas fa-home"></i>
+        </div>
+    </div>
+
+    <div class="loader-brand">عودة للعقار</div>
+    <div class="loader-tagline">عقارات مختارة بعناية</div>
+
+    <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+    </div>
+
+    <div class="loader-text">
+        <span>جاري تجهيز العقارات</span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+<!-- ============================================================
+     صفحة الدخول
+     ============================================================ -->
+<div class="auth" id="auth">
+
+    <!-- اللوحة الجانبية -->
+    <div class="auth-visual">
+        <div class="visual-grid"></div>
+        <div class="visual-content">
+
+            <div class="brand">
+                <div class="brand-mark">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">عودة للعقار</span>
+                    <span class="brand-sub">عقارات مختارة بعناية</span>
+                </div>
+            </div>
+
+            <div class="visual-hero">
+                <span class="visual-eyebrow">منصة عقارية موثوقة</span>
+                <h1>اكتشف عقارك<br><span>المثالي</span> معنا</h1>
+                <p>آلاف العقارات المختارة بعناية في جميع أنحاء المملكة، بأسعار تنافسية وتفاصيل موثوقة — بين يديك.</p>
+            </div>
+
+            <div class="visual-stats">
+                <div class="stat">
+                    <strong>+12K</strong>
+                    <span>عقار متاح</span>
+                </div>
+                <div class="stat">
+                    <strong>+8K</strong>
+                    <span>عميل سعيد</span>
+                </div>
+                <div class="stat">
+                    <strong>4.9</strong>
+                    <span>تقييم المنصة</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- جانب النموذج -->
+    <div class="auth-form-side">
+        <div class="form-wrapper">
+
+            <!-- شعار متجاوب -->
+            <div class="mobile-brand">
+                <div class="brand-mark" style="width:42px;height:42px;font-size:17px;">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title" style="font-size:17px;">عودة للعقار</span>
+                    <span class="brand-sub">عقارات مختارة بعناية</span>
+                </div>
+            </div>
+
+            <!-- التبويبات -->
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">تسجيل الدخول</button>
+                <button class="auth-tab" data-tab="signup">حساب جديد</button>
+            </div>
+
+            <!-- نموذج الدخول -->
+            <form class="auth-form active" id="login-form" novalidate>
+                <h2 class="form-title">مرحباً بعودتك 👋</h2>
+                <p class="form-subtitle">سجّل الدخول للمتابعة إلى حسابك</p>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope field-icon"></i>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock field-icon"></i>
+                    <input type="password" placeholder="كلمة المرور" required>
+                    <button type="button" class="toggle-password" aria-label="إظهار كلمة المرور">
+                        <i class="far fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="form-row">
+                    <label class="check">
+                        <input type="checkbox" checked>
+                        <span class="check-box"></span>
+                        تذكرني
+                    </label>
+                    <a href="#" class="link">نسيت كلمة المرور؟</a>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    تسجيل الدخول
+                    <i class="fas fa-arrow-left" style="font-size:12px;"></i>
+                </button>
+
+                <div class="divider">أو تابع باستخدام</div>
+
+                <div class="social-row">
+                    <button type="button" class="social-btn" onclick="showToast('سيتم ربط Google قريباً')">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                    <button type="button" class="social-btn" onclick="showToast('سيتم ربط Apple قريباً')">
+                        <i class="fab fa-apple"></i>
+                        Apple
+                    </button>
+                </div>
+
+                <div class="form-footer">
+                    ليس لديك حساب؟
+                    <a href="#" class="link" data-switch="signup">أنشئ حساباً جديداً</a>
+                </div>
+            </form>
+
+            <!-- نموذج إنشاء حساب -->
+            <form class="auth-form" id="signup-form" novalidate>
+                <h2 class="form-title">أنشئ حسابك</h2>
+                <p class="form-subtitle">انضم إلينا وابدأ رحلتك العقارية</p>
+
+                <div class="input-group">
+                    <i class="fas fa-user field-icon"></i>
+                    <input type="text" placeholder="الاسم الكامل" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope field-icon"></i>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-phone field-icon"></i>
+                    <input type="tel" placeholder="رقم الجوال" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock field-icon"></i>
+                    <input type="password" placeholder="كلمة المرور" required>
+                    <button type="button" class="toggle-password" aria-label="إظهار كلمة المرور">
+                        <i class="far fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock field-icon"></i>
+                    <input type="password" placeholder="تأكيد كلمة المرور" required>
+                    <button type="button" class="toggle-password" aria-label="إظهار كلمة المرور">
+                        <i class="far fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="form-row">
+                    <label class="check">
+                        <input type="checkbox" required>
+                        <span class="check-box"></span>
+                        أوافق على الشروط والأحكام
+                    </label>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    إنشاء الحساب
+                    <i class="fas fa-arrow-left" style="font-size:12px;"></i>
+                </button>
+
+                <div class="form-footer">
+                    لديك حساب بالفعل؟
+                    <a href="#" class="link" data-switch="login">سجّل الدخول</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-text">تم بنجاح</span>
+</div>
+
+<!-- ============================================================
+     🌟 السطور الجديدة اللي أضفتها (مكتبة سوبابيس وملف السلك)
+     ============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+
+<script src="log.js"></script>
+</body>
+</html>
